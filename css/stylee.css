@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	padding:0;
+	color: #ffff;
+	font-family: 'Bad Script', cursive;
+	font-size: 26px;
+}
+.slider{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:0;
+}
+.items{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	border:1px solid blue;
+	justify-content: center;
+	flex-basis: 25%;
+	transition: all 0.5s;
+}
+.items span{
+	font-size: 2rem;
+	text-shadow: 0px 0px 10px #000;
+}
+.items:hover{
+	flex-basis: 60%;
+}
+.items_1{
+	background: url(../img/angello-pro-UljbyG2UcVI-unsplash-min.jpg)no-repeat center center;
+	background-size: cover;
+}
+.items_2{
+	background: url(../img/jcob-nasyr-qsHnTlm_p5g-unsplash-min.jpg)no-repeat center center;
+	background-size: cover;
+}
+.items_3{
+	background: url(../img/roberto-nickson-5ui0tfMC5ts-unsplash-min.jpg)no-repeat center center;
+	background-size: cover;
+}
+.items_4{
+	background: url(../img/vicko-mozara-m82uh_vamhg-unsplash-min.jpg)no-repeat center center;
+	background-size: cover;
+}
+@media(max-width: 640px) {
+	.slider{
+		height: 100vh;
+		flex-flow: column;
+	}
+	.items{
+		width: 100%;
+	}
+	.items:hover{
+		flex-grow: 30%
+	}
+}
